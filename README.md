@@ -1,2 +1,3 @@
-# Adventure
-モバイルゲームC班　サンプル
+﻿# Adventure
+モバイルゲームC班　サンプル  
+

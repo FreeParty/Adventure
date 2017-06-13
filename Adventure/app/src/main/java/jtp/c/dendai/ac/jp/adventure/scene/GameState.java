@@ -3,7 +3,8 @@ public enum GameState {
     first(new First()),
     second(new Second()),
     ending(new Ending()),
-    badend(new BadEnd());
+    badend(new BadEnd()),
+    deadend(new DeadEnd());
 
     private Scene scene;
     public Scene getScene(){

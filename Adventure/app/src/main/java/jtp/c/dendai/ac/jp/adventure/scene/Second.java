@@ -8,6 +8,8 @@ public class Second extends AbstractScene {
                 return GameState.ending;
             case 1:
                 return GameState.badend;
+            case 2:
+                return GameState.deadend;
         }
         return null;
     }

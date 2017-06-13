@@ -43,4 +43,11 @@
         <item>End.</item>
     </string-array>
     <string name="datebadend">2015年3月15日</string>
+    <string-array name="messagedeadend">
+        <item>岡部:授業が難しく、ついていけそうになかった。僕は時間の無駄だと考え、単位を放棄することを決意した。</item>
+        <item>岡部:そもそも、朝の一限目から授業を受けるという事が無理だったのだ。僕は朝ゆっくり眠ってのんびり生活をしていった。</item>
+        <item>岡部:ところが、評価はD。不合格だった。いったい何が悪かったんだろう？</item>
+        <item>クリロナ:なぜ笑うんだい？</item>
+        <item>End.</item>
+    </string-array>
 </resources>

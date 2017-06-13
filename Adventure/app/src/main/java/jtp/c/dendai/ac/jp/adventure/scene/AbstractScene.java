@@ -11,6 +11,7 @@ import android.text.method.ScrollingMovementMethod;
 import android.view.View;
 import android.widget.CompoundButton;
 import android.widget.ImageView;
+import android.widget.ImageView.ScaleType;
 import android.widget.TextView;
 import android.media.AudioManager;
 import android.media.SoundPool;
@@ -77,6 +78,8 @@ public abstract class AbstractScene implements Scene {
         ImageView imageView = (ImageView) activity.findViewById(R.id.imageView1);
         imageView.setOnClickListener(this);
         imageView.setImageResource(getImageId());
+
+        imageView.setScaleType(ScaleType.FIT_XY);
 
         final TextView logView = ((TextView)activity.findViewById(R.id.log));
         logView.setMovementMethod(ScrollingMovementMethod.getInstance());
