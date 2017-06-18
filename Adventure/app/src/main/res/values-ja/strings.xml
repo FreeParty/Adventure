@@ -123,10 +123,10 @@
     <string-array name="message_freY3">
         <item>岡部:結果は可もなく不可もなく。損をしなかっただけよかっただろう。</item>
         <item>岡部:僕は冷静になって考えた。今回は良かったが、次もこうなるとは限らない。</item>
-        <item>岡部:Bはまた次も行こうと誘ってきた。</item>
+        <item>岡部:Yはまた次も行こうと誘ってきた。</item>
     </string-array>
     <string-array name="question_freY">
-        <item>Bと共にパチンコに通い続ける</item>
+        <item>Yと共にパチンコに通い続ける</item>
         <item>ほどほどにしよう</item>
         <item>単位放棄する</item>
     </string-array>
@@ -134,20 +134,20 @@
     <string-array name="message_freY4">
         <item>岡部:結果はぼろ負けだった。初めてのパチンコだったが、かなり損した。</item>
         <item>岡部:僕は冷静になって考えた。次は勝てるとは限らないしほどほどにすべきだと。</item>
-        <item>岡部:Bはまた次も行こうと誘ってきたが、考えを告げて勉強に戻ることにした。</item>
+        <item>岡部:Yはまた次も行こうと誘ってきたが、考えを告げて勉強に戻ることにした。</item>
     </string-array>
 
     <string-array name="message_freY5">
         <item>岡部:僕はたまに誘いに応じながらも勉強をつづけた。</item>
-        <item>岡部:そのうち、Bも焦り始めたのか一緒に勉強するようになっていた。</item>
+        <item>岡部:そのうち、Yも焦り始めたのか一緒に勉強するようになっていた。</item>
         <item>岡部:二人で真面目に勉強を続けたので、何とか評価Cを得ることが出来た</item>
         <item>岡部:あのままハマってしまったらどうなっていたかわからないが、とりあえずは最悪の事態を避けることができたようだ。</item>
         <item>End.「rank C」</item>
     </string-array>
 
     <string-array name="message_freY6">
-        <item>岡部:その後もBと一緒に、パチンコに熱中していった</item>
-        <item>岡部:いつしかBよりもパチンコ店に入り浸る時間が多くなっていた</item>
+        <item>岡部:その後もYと一緒に、パチンコに熱中していった</item>
+        <item>岡部:いつしかYよりもパチンコ店に入り浸る時間が多くなっていた</item>
         <item>岡部:途中から結果なんか忘れていたけど、やっぱり勝つことができたらうれしい。</item>
         <item>岡部:そして、パチンコの面白さが分かって楽しくなった。</item>
         <item>岡部:そのような生活を続けていくうちに、授業についていけなくなってきた。</item>
@@ -242,7 +242,7 @@
     </string-array>
 
     <string-array name="messageend_dead">
-        <item>岡部:授業が難しく、ついていけそうになかった。僕は時間の無駄だと考え、単位を放棄することを決意した。</item>
+        <item>岡部:授業が難しく、ついていけそうになかった。僕は単位を放棄することを決意した。</item>
         <item>岡部:もちろん評価はD。不合格だった。放棄したんだから当然だ。</item>
         <item>End.「単位放棄」</item>
     </string-array>

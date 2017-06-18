@@ -29,7 +29,7 @@ public class God3 extends AbstractScene {
         return R.string.date2;
     }
     @Override
-    public int getMusicId() { return R.raw.daily;}
+    public int getMusicId() { return R.raw.orchestra23;}
     @Override
     public String getSceneName() { return "God3";}
 }

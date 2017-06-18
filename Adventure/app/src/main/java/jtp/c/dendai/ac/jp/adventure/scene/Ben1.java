@@ -18,7 +18,7 @@ public class Ben1 extends AbstractScene {
     }
     @Override
     public int getImageId() {
-        return R.drawable.second;
+        return R.drawable.m2;
     }
     @Override
     public int getMessageId() {

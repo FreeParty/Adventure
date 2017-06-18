@@ -23,7 +23,7 @@ public class Ben2 extends AbstractScene {
         return R.string.dateending;
     }
     @Override
-    public int getMusicId() { return R.raw.daily;}
+    public int getMusicId() { return R.raw.goodend;}
     @Override
     public String getSceneName() { return "Ben2";}
 }

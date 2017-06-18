@@ -24,7 +24,7 @@ public class DeadEnd extends AbstractScene {
         return 0;
     }
     @Override
-    public int getMusicId() { return R.raw.badend;}
+    public int getMusicId() { return R.raw.fantasy09;}
     @Override
     public String getSceneName() { return "DeadEnd";}
 }

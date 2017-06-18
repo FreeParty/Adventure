@@ -23,7 +23,7 @@ public class FreZ2 extends AbstractScene {
         return R.string.dateending;
     }
     @Override
-    public int getMusicId() { return R.raw.daily;}
+    public int getMusicId() { return R.raw.piano22;}
     @Override
     public String getSceneName() { return "FreZ2";}
 }

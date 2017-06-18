@@ -31,7 +31,7 @@ public class FreY3 extends AbstractScene {
         return R.string.date3;
     }
     @Override
-    public int getMusicId() { return R.raw.daily;}
+    public int getMusicId() { return R.raw.casino01;}
     @Override
     public String getSceneName() { return "FreY3";}
 }
