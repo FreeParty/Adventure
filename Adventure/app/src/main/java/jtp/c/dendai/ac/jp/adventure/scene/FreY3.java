@@ -1,36 +1,37 @@
 package jtp.c.dendai.ac.jp.adventure.scene;
 import jtp.c.dendai.ac.jp.adventure.R;
-public class Second extends AbstractScene {
+
+public class FreY3 extends AbstractScene {
     @Override
     public GameState next(int no) {
         switch(no){
             case 0:
-                return GameState.ben1;
+                return GameState.freY6;
             case 1:
-                return GameState.fre1;
+                return GameState.freY5;
             case 2:
-                return GameState.god1;
+                return GameState.deadend;
         }
         return null;
     }
     @Override
     public int getImageId() {
-        return R.drawable.second;
+        return R.drawable.pachi;
     }
     @Override
     public int getMessageId() {
-        return R.array.message2;
+        return R.array.message_freY3;
     }
     @Override
     public int getQuestionId() {
-        return R.array.question2;
+        return R.array.question_freY;
     }
     @Override
     public int getDateId() {
-        return R.string.date1;
+        return R.string.date3;
     }
     @Override
     public int getMusicId() { return R.raw.daily;}
     @Override
-    public String getSceneName() { return "Second";}
+    public String getSceneName() { return "FreY3";}
 }

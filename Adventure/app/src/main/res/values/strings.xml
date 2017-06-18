@@ -13,13 +13,16 @@
     <string name="qsave">Quick Save</string>
     <string name="qsavecomplete"></string>>
     <string name="question_title">Choose!</string>
+
+
     <string-array name="message1">
         <item>Okabe:I am Kentaro Okabe, a sophomore of Department of IC, school of Engineering, Den University.</item>
         <item>Okabe:Finally, it\'s time to reach the second semester.</item>
         <item>Okabe:I have a class by the name of "Data Structures and Algorithms" for my first class of Thursday, though.</item>
         <item>Okabe:Somehow, I feel different atmosphere from other classes.</item>
     </string-array>
-    <string name="date1">9/18/2014</string>
+
+    <string name="date1">9/18/2016</string>
     <string-array name="message2">
         <item>Okabe:My impression is that the class is quite difficult.</item>
     </string-array>
@@ -28,21 +31,24 @@
         <item>For the present, I am seeing whether my friends can do it well.</item>
         <item>Give up the class.</item>
     </string-array>
-    <string name="date2">9/18/2014</string>
-    <string-array name="messageending">
+    <string name="date2">9/18/2016</string>
+
+    <string-array name="messageend_a1">
         <item>Okabe:First, I studied it. But, it was so serious.</item>
         <item>Okabe:Nevertheless, I studied it hard so that I can enjoy it more and more.</item>
-        <item>Okabe:Finally, I received my result. Believe it or not, it is a grade of S.</item>
+        <item>Okabe:Finally, I received my result. Believe it or not, it is a grade of A.</item>
         <item>Okabe:Even though I didn\'t mind what result I can receive the while, I am happy for receiving the good result.</item>
         <item>Okabe:Moreover, since I make sense of programming, I can enjoy programming.</item>
         <item>End.</item>
     </string-array>
-    <string name="dateending">3/15/2015</string>
-    <string-array name="messagebadend">
+    <string name="dateending">3/15/2017</string>
+
+    <string-array name="messageend_d1">
         <item>Okabe:Since my friends said "it is OK," while harmonizing with my friends, the winter holidays came.</item>
         <item>Okabe:Luckily, I received the programs from somewhere, then, I managed to submit a report to which I included it.</item>
         <item>Okabe:But, I received a grade of D. I failed the class. I don\'t know what my fault is.</item>
         <item>End.</item>
     </string-array>
-    <string name="datebadend">3/15/2015</string>
+
+
 </resources>

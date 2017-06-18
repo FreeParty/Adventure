@@ -55,7 +55,7 @@ public abstract class AbstractScene implements Scene {
         else nextPage();
     }
     private void askQuestion() {
-        Builder builder = new AlertDialog.Builder(activity);
+        Builder builder = new Builder(activity);
         builder.setCancelable(false);
         builder.setTitle(activity.getString(R.string.question_title));
         builder.setItems(getQuestion(),new DialogInterface.OnClickListener(){

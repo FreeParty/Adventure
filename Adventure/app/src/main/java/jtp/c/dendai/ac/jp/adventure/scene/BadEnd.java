@@ -7,15 +7,15 @@ public class BadEnd extends AbstractScene {
     }
     @Override
     public int getImageId() {
-        return R.drawable.badend;
+        return R.drawable.ending_d;
     }
     @Override
     public int getDateId(){
-        return R.string.datebadend;
+        return R.string.dateending;
     }
     @Override
     public int getMessageId() {
-        return R.array.messagebadend;
+        return R.array.message_d1;
     }
     @Override
     public int getQuestionId() {

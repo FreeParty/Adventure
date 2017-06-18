@@ -64,10 +64,59 @@ public class Game implements Handler {
                                 break;
                             case "Second": scene = GameState.first == null ? null : GameState.second.getScene();
                                 break;
-                            case "BadEnd": scene = GameState.first == null ? null : GameState.badend.getScene();
+
+                            case "Ben1": scene = GameState.first == null ? null : GameState.ben1.getScene();
                                 break;
+                            case "Ben2": scene = GameState.first == null ? null : GameState.ben2.getScene();
+                                break;
+                            case "Ben3": scene = GameState.first == null ? null : GameState.ben3.getScene();
+                                break;
+                            case "Ben4": scene = GameState.first == null ? null : GameState.ben4.getScene();
+                                break;
+
+                            case "Fre1": scene = GameState.first == null ? null : GameState.fre1.getScene();
+                                break;
+                            case "FreX1": scene = GameState.first == null ? null : GameState.freX1.getScene();
+                                break;
+                            case "FreX2": scene = GameState.first == null ? null : GameState.freX2.getScene();
+                                break;
+                            case "FreY1": scene = GameState.first == null ? null : GameState.freY1.getScene();
+                                break;
+                            case "FreY2": scene = GameState.first == null ? null : GameState.freY2.getScene();
+                                break;
+                            case "FreY3": scene = GameState.first == null ? null : GameState.freY3.getScene();
+                                break;
+                            case "FreY4": scene = GameState.first == null ? null : GameState.freY4.getScene();
+                                break;
+                            case "FreY5": scene = GameState.first == null ? null : GameState.freY5.getScene();
+                                break;
+                            case "FreY6": scene = GameState.first == null ? null : GameState.freY6.getScene();
+                                break;
+                            case "FreZ1": scene = GameState.first == null ? null : GameState.freZ1.getScene();
+                                break;
+                            case "FreZ2": scene = GameState.first == null ? null : GameState.freZ2.getScene();
+                                break;
+                            case "FreZ3": scene = GameState.first == null ? null : GameState.freZ3.getScene();
+                                break;
+
+                            case "God1": scene = GameState.first == null ? null : GameState.god1.getScene();
+                                break;
+                            case "God2": scene = GameState.first == null ? null : GameState.god2.getScene();
+                                break;
+                            case "God3": scene = GameState.first == null ? null : GameState.god3.getScene();
+                                break;
+                            case "God4": scene = GameState.first == null ? null : GameState.god4.getScene();
+                                break;
+                            case "God5": scene = GameState.first == null ? null : GameState.god5.getScene();
+                                break;
+
                             case "Ending": scene = GameState.first == null ? null : GameState.ending.getScene();
                                 break;
+                            case "BadEnd": scene = GameState.first == null ? null : GameState.badend.getScene();
+                                break;
+                            case "DeadEnd": scene = GameState.first == null ? null : GameState.deadend.getScene();
+                                break;
+
                         }
                         index = Integer.parseInt(data[1]);
                     }

@@ -3,11 +3,11 @@ import jtp.c.dendai.ac.jp.adventure.R;
 public class Ending extends AbstractScene {
     @Override
     public int getImageId() {
-        return R.drawable.ending;
+        return R.drawable.ending_a;
     }
     @Override
     public int getMessageId() {
-        return R.array.messageending;
+        return R.array.messageend_a1;
     }
     @Override
     public int getQuestionId() {
