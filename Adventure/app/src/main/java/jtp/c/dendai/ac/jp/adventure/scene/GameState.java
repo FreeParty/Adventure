@@ -27,7 +27,6 @@ public enum GameState {
     god4(new God4()),
     god5(new God5()),
 
-    ending(new Ending()),
     badend(new BadEnd()),
     deadend(new DeadEnd());
 

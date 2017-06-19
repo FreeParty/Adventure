@@ -5,6 +5,7 @@ import jtp.c.dendai.ac.jp.adventure.scene.Scene;
 
 import android.content.SharedPreferences;
 import android.media.AudioManager;
+import android.media.MediaPlayer;
 import android.media.SoundPool;
 import android.support.v7.app.AppCompatActivity;
 import android.view.View;
@@ -16,11 +17,14 @@ public class Game implements Handler {
     private Scene scene;
     private SoundPool pool;
     private int sound;
+    private MediaPlayer mp;
     public Game(AppCompatActivity mainActivity) {
         this.activity = mainActivity;
         title = new Title();
         pool = new SoundPool(1, AudioManager.STREAM_MUSIC, 0);
         sound = pool.load(activity, R.raw.start,1);
+        mp = MediaPlayer.create(activity, R.raw.daily);
+        mp.setLooping(true);
     }
     @Override
     public void step(Scene s) {
@@ -34,9 +38,11 @@ public class Game implements Handler {
             AbstractScene.setIsAuto(false);
             activity.setContentView(title.getContentView());
             title.init(activity,new OnStartButtonClickListener(true), new OnStartButtonClickListener(false));
+            mp.start();
         }else{
             activity.setContentView(R.layout.activity_main);
             scene.start(this,index);
+            mp.stop();
         }
     }
     class OnStartButtonClickListener implements OnClickListener {
@@ -49,6 +55,7 @@ public class Game implements Handler {
             if(intialize || scene==null){
                 scene=GameState.getInitialScene();
             }
+            pool.play(sound,1,1,0,0,1);
             switch (v.getId()){
                 case R.id.startbutton:
                     start(0);
@@ -58,7 +65,9 @@ public class Game implements Handler {
                     String qsave = prefer.getString("qsave",null);
                     int index = 0;
                     if(qsave != null){
-                        String[] data = qsave.split(":");
+                        String[] data = qsave.split("<>");
+
+                        for(String str: data) System.out.println(str);
                         switch (data[0]){
                             case "First": scene = GameState.first == null ? null : GameState.first.getScene();
                                 break;
@@ -110,8 +119,6 @@ public class Game implements Handler {
                             case "God5": scene = GameState.first == null ? null : GameState.god5.getScene();
                                 break;
 
-                            case "Ending": scene = GameState.first == null ? null : GameState.ending.getScene();
-                                break;
                             case "BadEnd": scene = GameState.first == null ? null : GameState.badend.getScene();
                                 break;
                             case "DeadEnd": scene = GameState.first == null ? null : GameState.deadend.getScene();
@@ -119,11 +126,11 @@ public class Game implements Handler {
 
                         }
                         index = Integer.parseInt(data[1]);
+                        AbstractScene.setLog(data[2]);
                     }
                     start(index);
                     break;
             }
-            pool.play(sound,1,1,0,0,1);
         }
     }
 }

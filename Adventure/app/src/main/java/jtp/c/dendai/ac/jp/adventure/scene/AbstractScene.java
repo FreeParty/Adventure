@@ -29,6 +29,7 @@ public abstract class AbstractScene implements Scene {
     private MediaPlayer mp;
     private static SoundPool pool;
     private static int sound;
+    private static int sound2;
 
     private int index;
     private Handler handler;
@@ -38,8 +39,9 @@ public abstract class AbstractScene implements Scene {
     };
     public static void setActivity(Activity _activity){
         activity = _activity;
-        pool = new SoundPool(1, AudioManager.STREAM_MUSIC, 0);
+        pool = new SoundPool(2, AudioManager.STREAM_MUSIC, 0);
         sound = pool.load(activity, R.raw.prompt,1);
+        sound2 = pool.load(activity,R.raw.start,1);
     }
     @Override
     public void onClick(View v){
@@ -94,6 +96,7 @@ public abstract class AbstractScene implements Scene {
                 isVisible = isChecked;
                 if(isVisible) logView.setVisibility(View.VISIBLE);
                 else logView.setVisibility(View.INVISIBLE);
+                pool.play(sound2,0.5f,0.5f,0,0,1);
             }
         });
 
@@ -107,6 +110,7 @@ public abstract class AbstractScene implements Scene {
                 String[] item = getMessage()[index].split(":",2);
                 String message = item[item.length - 1];
                 if (textView.getText().length() == message.length()) nextPage();
+                pool.play(sound2,0.5f,0.5f,0,0,1);
             }
         });
 
@@ -118,6 +122,7 @@ public abstract class AbstractScene implements Scene {
                 mp.release();
                 mp = null;
                 release = true;
+                pool.play(sound2,0.5f,0.5f,0,0,1);
             }
         });
 
@@ -127,9 +132,10 @@ public abstract class AbstractScene implements Scene {
                 SharedPreferences prefer = activity.getPreferences(activity.MODE_PRIVATE);
                 Editor editor = prefer.edit();
                 String className = new Object(){}.getClass().getEnclosingClass().getName();
-                editor.putString("qsave",getSceneName() + ":" + index);
+                editor.putString("qsave",getSceneName() + "<>" + index + "<>" + log);
                 editor.commit();
                 Toast.makeText(activity, activity.getString(R.string.qsavecomplete),Toast.LENGTH_SHORT).show();
+                pool.play(sound2,0.5f,0.5f,0,0,1);
             }
         });
         release = false;
@@ -181,6 +187,7 @@ public abstract class AbstractScene implements Scene {
     private void  wirteLog(){
         TextView logView = (TextView) activity.findViewById(R.id.log);
         logView.setText(log);
+        if(logView.getLineCount() * logView.getLineHeight() > logView.getHeight()) logView.scrollTo(0,(logView.getLineCount() * logView.getLineHeight()) - logView.getHeight());
     }
 
     private void writeMessage() {

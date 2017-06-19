@@ -1,5 +1,5 @@
 <resources>
-    <string name="app_name">アドベンチャー</string>
+    <string name="app_name">データ構造とアルゴリズム</string>
     <string name="action_settings">設定</string>
     <string name="background">背景画像</string>
     <string name="title">データ構造とアルゴリズム</string>

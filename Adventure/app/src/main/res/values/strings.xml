@@ -1,18 +1,18 @@
 <resources>
-    <string name="app_name">アドベンチャー</string>
-    <string name="action_settings">設定</string>
-    <string name="background">背景画像</string>
-    <string name="title">データ構造とアルゴリズム</string>
-    <string name="startb">始めから</string>
-    <string name="continueb">続きから</string>
-    <string name="question_title">どうする？</string>
-    <string name="exit">終了</string>
-    <string name="logOn">ログを表示</string>
-    <string name="LogOff">ログを隠す</string>
-    <string name="autoOn">オート</string>
-    <string name="autoOff">マニュアル</string>
-    <string name="qsave">セーブ</string>
-    <string name="qsavecomplete">セーブしました！</string>>
+    <string name="app_name">Data Structures and Algorithms</string>
+    <string name="action_settings">Settings</string>
+    <string name="background">Back Ground Image</string>
+    <string name="title">Data Structures and Algorithms</string>
+    <string name="startb">Start</string>
+    <string name="continueb">Continue</string>
+    <string name="exit">Exit</string>
+    <string name="logOn">Log</string>
+    <string name="LogOff">Hide</string>
+    <string name="autoOn">Auto</string>
+    <string name="autoOff">Manual</string>
+    <string name="qsave">Quick Save</string>
+    <string name="qsavecomplete"></string>>
+    <string name="question_title">Choose!</string>
 
 
     <string name="date1">2016年9月15日</string>
