@@ -140,9 +140,9 @@
     <string-array name="message_freY5">
         <item>岡部:僕はたまに誘いに応じながらも勉強をつづけた。</item>
         <item>岡部:そのうち、Yも焦り始めたのか一緒に勉強するようになっていた。</item>
-        <item>岡部:二人で真面目に勉強を続けたので、何とか評価Cを得ることが出来た</item>
+        <item>岡部:二人で真面目に勉強を続けたので、何とか評価Bを得ることが出来た</item>
         <item>岡部:あのままハマってしまったらどうなっていたかわからないが、とりあえずは最悪の事態を避けることができたようだ。</item>
-        <item>End.「rank C」</item>
+        <item>End.「rank B」</item>
     </string-array>
 
     <string-array name="message_freY6">

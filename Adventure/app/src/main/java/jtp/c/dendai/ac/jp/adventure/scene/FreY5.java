@@ -8,7 +8,7 @@ public class FreY5 extends AbstractScene {
     }
     @Override
     public int getImageId() {
-        return R.drawable.ending_c;
+        return R.drawable.ending_b;
     }
     @Override
     public int getMessageId() {
